@@ -7,7 +7,7 @@ body {
 
 .container {
     display: grid;
-    grid-template-columns: 1fr 5fr;
+    grid-template-columns: 350px 5fr;
     grid-template-rows: repeat(5, 1fr);
     height: 100vh;
     width: 100vw;
@@ -18,24 +18,15 @@ body {
     grid-column: 1;
     grid-row: 1/-1;
     display: flex;
+    gap: 40px;
     flex-direction: column;
-    padding-top: calc(1px + (.8*2vw));
-    padding-left: calc(5px + (1*1vw));
+    padding-top: 25px;
+    padding-left: 25px;
     color: white;
-    font-size: calc(4px + (1*1.5vw));
+    font-size: 30px;
     font-weight: 500;
     font-family: 'roboto';
     overflow: auto;
-}
-
-.sidebar > * {
-    margin-bottom: calc(1px + (.8*2vw));
-}
-
-.sidebar ul {
-    padding-left: 0px;
-    margin: 0;
-    list-style: none;
 }
 
 .header {
