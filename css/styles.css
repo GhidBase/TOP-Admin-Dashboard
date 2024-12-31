@@ -1,3 +1,7 @@
+:root {
+    --header-end-padding: 25px;
+}
+
 body {
     height: 100vh;
     width: 100vw;
@@ -14,6 +18,7 @@ body {
 }
 
 .sidebar {
+    z-index: 2;
     background-color: rgb(0, 162, 255);
     grid-column: 1;
     grid-row: 1/-1;
@@ -29,7 +34,9 @@ body {
     overflow: auto;
 }
 
+
 .header {
+    z-index: 1;
     background-color: white;
     grid-column: 2;
     grid-row: 1;
@@ -38,34 +45,48 @@ body {
     grid-template-columns: 3fr 2fr;
     align-items: center;
     justify-items: center;
+    box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.74);
 }
 
 .search-bar {
-    display: grid;
-    grid-template-columns: 1fr;
     grid-row: 1;
+    display: flex;
+    padding-left: var(--header-end-padding);
     width: 100%;
-    justify-items: center;
+    box-sizing: border-box;
 }
 
 .search-bar input {
-    width: 60%;
+    width: 100%;
 }
 
 .user-info-little {
+    justify-self: right;
     grid-row: 1;
+    padding-right: var(--header-end-padding);
 }
 
 .user-info-big {
     grid-row: 2;
+    justify-self: left;
+    padding-left: var(--header-end-padding);
 }
 
 .header-buttons {
     grid-row: 2;
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    box-sizing: border-box;
+    padding-right: var(--header-end-padding);
+}
+
+.header-buttons button {
+    flex: 1;
 }
 
 .main-content {
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(214, 214, 214);
     grid-column: 2;
     grid-row: 2/-1;
 }
