@@ -33,6 +33,35 @@ body {
     background-color: white;
     grid-column: 2;
     grid-row: 1;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 3fr 2fr;
+    align-items: center;
+    justify-items: center;
+}
+
+.search-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: 1;
+    width: 100%;
+    justify-items: center;
+}
+
+.search-bar input {
+    width: 60%;
+}
+
+.user-info-little {
+    grid-row: 1;
+}
+
+.user-info-big {
+    grid-row: 2;
+}
+
+.header-buttons {
+    grid-row: 2;
 }
 
 .main-content {
