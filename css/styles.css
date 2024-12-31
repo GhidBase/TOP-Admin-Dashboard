@@ -19,16 +19,17 @@ body {
     grid-row: 1/-1;
     display: flex;
     flex-direction: column;
-    padding-top: 25px;
+    padding-top: calc(1px + (.8*2vw));
     padding-left: calc(5px + (1*1vw));
     color: white;
-    font-size: calc(1px + (.8*2vw));
+    font-size: calc(4px + (1*1.5vw));
     font-weight: 500;
     font-family: 'roboto';
+    overflow: auto;
 }
 
 .sidebar > * {
-    margin-bottom: 105px;
+    margin-bottom: calc(1px + (.8*2vw));
 }
 
 .sidebar ul {
