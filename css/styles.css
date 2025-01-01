@@ -1,5 +1,6 @@
 :root {
     --header-end-padding: 40px;
+    --header-top-padding: 60px;
 }
 
 * {
@@ -96,7 +97,9 @@ body {
     display: grid;
     
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    overflow: auto;
 }
 
 .projects {
@@ -105,7 +108,7 @@ body {
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: .25fr 3fr;
+    grid-template-rows: var(--header-top-padding) 3fr;
 }
 
 .projects-header {
@@ -151,9 +154,9 @@ body {
 
 .announcements {
     grid-column: 2;
-    grid-row: 1/-1;
+    grid-row: 1;
 
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: .25fr 3fr;
+    grid-template-rows: var(--header-top-padding) 3fr;
 }
