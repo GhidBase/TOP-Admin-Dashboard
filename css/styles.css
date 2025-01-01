@@ -1,5 +1,5 @@
 :root {
-    --header-end-padding: 25px;
+    --header-end-padding: 40px;
 }
 
 body {
@@ -89,4 +89,41 @@ body {
     background-color: rgb(214, 214, 214);
     grid-column: 2;
     grid-row: 2/-1;
+    display: grid;
+    
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+}
+
+.projects {
+    grid-column: 1/2;
+    grid-row: 1/-1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .25fr 3fr;
+}
+
+.projects-header {
+    margin-top: auto;
+    margin-bottom: 15px;
+    margin-left: 15px;
+}
+
+.projects-container {
+    grid-row: 2;
+    grid-column: 1/-1;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.projects-item {
+    margin: 30px;
+    margin-top: 0px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.247);
 }
