@@ -78,10 +78,27 @@ body {
     padding-left: var(--header-end-padding);
     width: 100%;
     box-sizing: border-box;
+    font-size: 36px;
+}
+
+.search-bar img{
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 20px;
 }
 
 .search-bar input {
     width: 100%;
+    background-color: rgb(214, 214, 214);
+    border: none;
+    border-radius: 18px;
+    padding-left: 18px;
+    font-family: 'roboto';
+}
+
+.search-bar input:focus {
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.247);
 }
 
 .user-info-little {
