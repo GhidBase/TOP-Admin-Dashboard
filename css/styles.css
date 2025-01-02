@@ -223,6 +223,7 @@ img {
     background-color: white;
     border-radius: 12px;
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.247);
+    border-left: 12px solid rgb(255, 191, 30);
 }
 
 .announcements-header,
