@@ -52,6 +52,13 @@ img {
     
 }
 
+.sidebar-top,
+.sidebar-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
 .sidebar img{
     height: 1em;
     width: auto;
