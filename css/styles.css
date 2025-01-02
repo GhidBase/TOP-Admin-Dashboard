@@ -38,7 +38,25 @@ body {
     font-weight: 500;
     font-family: 'roboto';
     overflow: auto;
+
+    
 }
+
+.sidebar img{
+    height: 1em;
+    width: auto;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+
+.title img{
+    height: 2em;
+}
+
+.side-content {
+    vertical-align: middle;
+}
+
 
 
 .header {
