@@ -71,10 +71,11 @@ img {
     grid-row: 1;
     display: grid;
     grid-template-rows: 3fr 3fr;
-    grid-template-columns: 3fr 2fr;
+    grid-template-columns: 3fr minmax(442px, 1.5fr);
     align-items: center;
     justify-items: center;
     box-shadow: 0px 0px 16px 0px rgba(0, 0, 0, 0.74);
+    overflow: auto;
 }
 
 
@@ -156,6 +157,8 @@ img {
 .header-buttons {
     grid-row: 2;
     width: 100%;
+    /* display: grid;
+    grid-template-columns: 1fr 1fr 1fr; */
     display: flex;
     gap: 20px;
     box-sizing: border-box;
@@ -164,6 +167,13 @@ img {
 
 .header-buttons button {
     flex: 1;
+    background-color: rgb(0, 162, 255);
+    border: none;
+    font-size: 20px;
+    padding: 8px;
+    box-sizing: border-box;
+    color: white;
+    border-radius: 100px;
 }
 
 .main-content {
