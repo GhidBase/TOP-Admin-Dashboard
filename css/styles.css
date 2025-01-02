@@ -56,7 +56,7 @@ img {
 .sidebar-bottom {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
 }
 
 .sidebar img{
